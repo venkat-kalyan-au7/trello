@@ -1,0 +1,186 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  font-size: 1rem;
+  background-color: #eee;
+  color: #333;
+}
+
+.copyright {
+  text-align: center;
+  color: blanchedalmond;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px;
+  height: 4.5vh;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: blueviolet;
+  font-size: 1rem;
+  opacity: 0.7;
+}
+
+.navbar a:hover {
+  opacity: 1;
+}
+
+.board-and-navbar {
+  background: linear-gradient(135deg, skyblue, violet);
+  background-size: cover;
+}
+
+.board-and-navbar .navbar {
+  background-color: rgba(670, 50, 50, 0.4);
+}
+
+.board-loading {
+  text-align: center;
+  margin-top: 20%;
+}
+
+.board {
+  padding: 10px;
+}
+
+
+
+.board .board-top {
+  padding: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.board .board-top .board-top-left {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+
+.board .board-top .board-top-left .board-title {
+  cursor: pointer;
+  color: snow;
+  padding: 5px 0 0 5px;
+  max-width: 500px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.board .board-top .board-top-left .board-title-form {
+  background-color: snow;
+}
+
+.board .create-list-button {
+  margin-top: 10px;
+  min-width: 200px;
+}
+
+.board .create-list-form {
+  min-width: 280px;
+  padding: 0 10px 10px;
+  margin-top: 10px;
+  height: fit-content;
+  background-color: #eee;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.board .lists {
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto;
+  height: 89vh;
+}
+
+.board .lists .list-wrapper {
+  background-color: #eee;
+  border-radius: 5px;
+  min-width: 280px;
+  max-width: 280px;
+  height: fit-content;
+  margin-top: 10px;
+  margin-right: 10px;
+  padding: 10px;
+}
+
+.board .lists .list-wrapper .list-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.board .lists .list-wrapper .list-top .list-title {
+  cursor: pointer;
+  padding: 5px 0 0 5px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.board .lists .list-wrapper .create-card-button {
+  margin-top: 5px;
+}
+
+.board .lists .list-wrapper .create-card-form {
+  margin-top: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.board .lists .list-wrapper .adding-card {
+  max-height: 80vh;
+}
+
+.board .lists .list-wrapper .list {
+  min-height: 1px;
+  overflow-y: auto;
+}
+
+.board .lists .list-wrapper .list .cards {
+  display: flex;
+  flex-direction: column;
+  margin-right: 2px;
+}
+
+.board .lists .list-wrapper .list .cards .card {
+  margin: 5px 0;
+  position: relative;
+  cursor: pointer;
+}
+
+.board .lists .list-wrapper .list .cards .card .card-label {
+  height: 9px;
+  width: 45px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+
+.board .lists .list-wrapper .list .cards .card .card-bottom {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 3px;
+  margin-bottom: -5px;
+}
+
+.board .lists .list-wrapper .list .cards .card .card-bottom .card-bottom-left {
+  display: flex;
+}
+
+.board .lists .list-wrapper .list .cards .mouse-over {
+  background-color: whitesmoke;
+}
